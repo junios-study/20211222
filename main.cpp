@@ -4,24 +4,39 @@ using namespace std;
 
 int main()
 {
-	cout << "Hello World" << endl;
+	//array배열
+	int Korean[1000] = { 0, };
 
-	int Height = 0;
-	int Base = 0;
+	//Korean[0] = 0 + 1 1;
+	//Korean[1] = 1 + 1 2;
+	//...
+	//Korean[99] = 99 + 1 100;
 
-	cin >> Height;
-	cin >> Base;
+	//1 - 100
+	//1 - 100 짝수
+	//1 - 100 홀수
+	//1 - 100 3의 배수
+	//if 안쓰고
 
-	float Area = 0.0f;
+	for (int i = 0; i < 1000; ++i)
+	{
+		Korean[i] = i + 1;
+		cout << Korean[i] << ", ";
+	}
 
-	Area = (static_cast<float>(Height) *
-		static_cast<float>(Base)) / 2.0f;
+	for (int i = 0; i < 1000; ++i)
+	{
 
-	cout << Area << endl;
+	}
 
-	//집에서 한거
+	//int Sum = 0;
+	//for (int i = 1; i < 101; ++i)
+	//{
+	//	Sum = Sum + i;
+	//}
 
-	//학원에서 한거
+	//cout << Sum << endl;
+
 
 
 	return 0;
